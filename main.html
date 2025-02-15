@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книга памяти Оренбургской области</title>
+  <link rel="stylesheet" href="style_xak.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#">Книга памяти</a>
+      </div>
+
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="map.html">Интерактивная карта</a></li>
+          <li><a href="form.html">Регистрация</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <nav class="mobile-menu">
+        <ul>
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="map.html">Интерактивная карта</a></li>
+          <li><a href="form.html">Регистрация</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+ 
+    <main class="welcome" >
+        <div class="container">
+            <div class="wrapper">
+                <div class="textwelcome">
+                    <h1>Книга Памяти Оренбургской области</h1>
+                    <h2>Увековечиваем подвиг защитников Отечества</h2>
+                </div>
+                <div class="userform">
+                    <form class="info-form">
+                        <h1>Добавьте свою информацию </h1>
+                        <input type="text" id="first-name" name="first-name" required placeholder="Введите имя">
+                        <input type="text" id="last-name" name="last-name" required placeholder="Введите фамилию">
+                
+                        <label for="birth-date">Дата рождения:</label>
+                        <input type="date" id="birth-date" name="birth-date" required>
+                
+                        <label for="death-date">Дата смерти:</label>
+                        <input type="date" id="death-date" name="death-date" required>
+                        <textarea id="comment" name="comment" rows="4" required placeholder="Информация о герое"></textarea>
+                
+                        <label for="file-upload">Фото   </label>
+                        <input type="file" id="file-upload" name="file-upload" accept="image/*">
+                
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<section class="card-container container">
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 1">
+        <h2>Иван Иванов</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Принял участие в нескольких ключевых сражениях, проявив выдающееся мужество.</p>
+    </div>
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 2">
+        <h2>Петр Петров</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Выдающийся командир, отличившийся в боях за освобождение страны.</p>
+    </div>
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 2">
+        <h2>Петр Петров</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Выдающийся командир, отличившийся в боях за освобождение страны.</p>
+    </div>
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 2">
+        <h2>Петр Петров</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Выдающийся командир, отличившийся в боях за освобождение страны.</p>
+    </div>
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 2">
+        <h2>Петр Петров</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Выдающийся командир, отличившийся в боях за освобождение страны.</p>
+    </div>
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 2">
+        <h2>Петр Петров</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Выдающийся командир, отличившийся в боях за освобождение страны.</p>
+    </div>
+</section>
+  
+  <script>
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
+  <script src="script_xak.js"></script>
+</body>
+<footer>
+   
+      <p>&copy; 2025 Мой сайт</p>
+   
+  </footer>
+</html>
