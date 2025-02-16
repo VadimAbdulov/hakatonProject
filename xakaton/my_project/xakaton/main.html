@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Книга памяти Оренбургской области</title>
+  <link rel="stylesheet" href="/styles/style_xak.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#">Книга памяти</a>
+      </div>
+
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="map.html">Интерактивная карта</a></li>
+          <li><a href="form.html">Регистрация</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <nav class="mobile-menu">
+        <ul>
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="map.html">Интерактивная карта</a></li>
+          <li><a href="form.html">Регистрация</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+ 
+    <main class="welcome" >
+        <div class="container">
+            <div class="wrapper">
+                <div class="textwelcome">
+                    <h1>Книга Памяти Оренбургской области</h1>
+                    <h2>Увековечиваем подвиг защитников Отечества</h2>
+                </div>
+                
+            
+            </div>
+        </div>
+    </main>
+
+<section class="card-container container">
+  <a href="/cards/card1.html"> 
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 1">
+        <h2>Иван Иванов</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Принял участие в нескольких ключевых сражениях, проявив выдающееся мужество.</p>
+      
+    </div>
+  </a>
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 2">
+        <h2>Петр Петров</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Выдающийся командир, отличившийся в боях за освобождение страны.</p>
+    </div>
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 2">
+        <h2>Петр Петров</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Выдающийся командир, отличившийся в боях за освобождение страны.</p>
+    </div>
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 2">
+        <h2>Петр Петров</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Выдающийся командир, отличившийся в боях за освобождение страны.</p>
+    </div>
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 2">
+        <h2>Петр Петров</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Выдающийся командир, отличившийся в боях за освобождение страны.</p>
+    </div>
+    <div class="card">
+        <img src="/image/osnova.jpg" alt="Герой 2">
+        <h2>Петр Петров</h2>
+        <p>Звание: Герой Советского Союза</p>
+        <p>Описание: Выдающийся командир, отличившийся в боях за освобождение страны.</p>
+    </div>
+</section>
+
+<div class="form-container">
+  <form id="resident-form">
+      <label for="surname">Фамилия:</label>
+      <input type="text" id="surname" required><br>
+
+      <label for="name">Имя:</label>
+      <input type="text" id="name" required><br>
+
+      <label for="patronymic">Отчество:</label>
+      <input type="text" id="patronymic" required><br>
+
+      <label for="birthdate">Дата и место рождения:</label>
+      <input type="text" id="birthdate" required><br>
+
+      <label for="organ">Орган управления</label>
+      <select id="organ" required>
+
+      <option value="Орган местного самоуправления">Орган местного самоуправления</option>
+      <option value="Орган военного управления">Орган военного управления</option>
+    </select><br>
+
+      <label for="military_commissariat">Военный комиссариат:</label>
+      <select id="military_commissariat" required>
+          <option value="">Выберите комиссариат</option>
+          <option value="Оренбургский">Оренбургский</option>
+          <option value="Северный">Северный</option>
+          <option value="Южный">Южный</option>
+          <option value="Западный">Западный</option>
+      </select><br>
+
+      <label for="rank">Воинское звание:</label>
+      <select id="rank" required>
+          <option value="">Выберите звание</option>
+          <option value="Рядовой">Рядовой</option>
+          <option value="Сержант">Сержант</option>
+          <option value="Лейтенант">Лейтенант</option>
+          <option value="Капитан">Капитан</option>
+          <option value="Полковник">Полковник</option>
+      </select><br>
+
+      <label for="conflicts">Вооруженные конфликты</label>
+      <select id="conflicts" required>
+          <option value="">Выберите конфликт</option>
+          <option value="Специальная военная операция на Украине">Специальная военная операция на Украине</option>
+          <option value="Великая отечественная война">Великая отечественная война</option>
+          <option value="Боевые действия в Афганистане">Боевые действия в Афганистане</option>
+          <option value="Конфликт в Чеченской Республике">Конфликт в Чеченской Республике</option>
+          <option value="Сирия">Сирия</option>
+          <option value="Выполнение специальных задач на территории Таджикистана, Ингушетии, в Грузино-Абхазских событиях">Выполнение специальных задач на территории Таджикистана, Ингушетии, в Грузино-Абхазских событиях</option>
+      </select><br>
+
+
+      <label for="awards">Награды:</label>
+      <input type="text" id="awards"><br>
+
+      <label for="death_date">Дата гибели или смерти:</label>
+      <input type="date" id="death_date"><br>
+
+      <label for="burial_place">Место захоронения:</label>
+      <input type="text" id="burial_place"><br>
+
+      <label for="info">Информация</label>
+        <textarea id="info" required></textarea><br>
+
+      <button type="submit">Добавить</button>
+  </form>
+</div>
+  <script>
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
+  <script src="script_xak.js"></script>
+</body>
+<footer>
+   
+      <p> Хакатон 2025</p>
+   
+  </footer>
+</html>

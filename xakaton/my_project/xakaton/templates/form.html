@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="form.css">
+    <title>Вход</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="loginForm">
+            <h1>Войти</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Введите имя" id="username" required>
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Введите пароль" id="password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            
+            <button type="submit" class="btn">Войти</button>
+
+            <div class="HaveAkk">
+                <p>У вас нет аккаунта?</p> <br><a href="form2.html">Зарегистрироваться</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвратить перезагрузку страницы
+
+            // Получаем значения логина и пароля
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Правильные логин и пароль
+            const correctUsername = "admin";
+            const correctPassword = "admin";
+
+            // Проверка логина и пароля
+            if (username === correctUsername && password === correctPassword) {
+                // Перенаправление на страницу администратора
+                window.location.href = 'admin.html'; // Замените 'admin.html' на нужную вам страницу
+            } else {
+                alert("Неправильный логин или пароль");
+            }
+        });
+    </script>
+</body>
+</html>

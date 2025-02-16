@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-image: url('/image/backck.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.wrapper{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper p{
+    max-width: 70%;
+    font-size: 30px;
+
+}
+.container h1, h2{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    .wrapper p{
+        max-width: 100%;
+        font-size: 20px;
+    }
+    .wrapper img{
+        width: 100%;
+    }
+}   
