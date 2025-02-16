@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>{{ username }} {{ surname }}</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/image/backck.jpg');
+            background-size:100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        h1,h2 {
+            color: #333; /* Цвет заголовка */
+            text-align: center;
+        }
+        h2{
+            margin: 20px;
+        }
+        img {
+            max-width: 100%; 
+            height: auto; 
+            margin-top: 10px; 
+        }
+        p {
+            margin: 10px 0;
+
+        }
+        .wrapper{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        }
+        @media (max-width: 768px) 
+        {
+            .wrapper{
+                flex-direction: column;
+            }
+            .wrapper p{
+                max-width: 100%;
+                font-size: 20px;
+            }
+            .wrapper img{
+                width: 100%;
+            }
+        }   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ surname }} {{ username }} {{ patronymic }}</h1>
+        
+        <h2>{{ birth_date }} - {{ death_date }}</h2>
+        <div class="wrapper">
+            {% if image %}
+                <img src="{{ url_for('static', filename='uploads/' ~ image) }}" alt="Изображение пользователя">
+            {% endif %}
+            <p> {{ description }}</p>
+        </div>
+    </div>
+</body>
+</html>
